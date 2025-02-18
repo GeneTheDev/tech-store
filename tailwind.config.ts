@@ -14,6 +14,10 @@ export default {
       fontFamily: {
         bebas: ["var(--font-bebas-neue)", "sans-serif"],
       },
+      fontSize: {
+        '120px': '120.26px',
+      },
+      
       colors: {
         primary: "#121212", // Jet Black
         secondary: "#1F1F1F", // Dark Gray

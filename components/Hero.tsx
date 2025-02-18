@@ -35,12 +35,14 @@ export default function Hero() {
             Shop Now
           </Button>
           <Button
-            as="a"
-            href="/learn-more"
-            className="border-2 border-accent text-accent px-6 py-3 rounded-lg hover:bg-accent hover:text-primary transition"
-          >
-            Learn More
-          </Button>
+              as="a"
+              href="/learn-more"
+              className="bg-transparent border-2 border-accent text-accent px-6 py-3 rounded-lg hover:bg-accent hover:text-primary transition"
+            >
+              Learn More
+            </Button>
+
+
         </div>
       </div>
     </section>

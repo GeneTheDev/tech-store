@@ -5,6 +5,7 @@ import NavbarComponent from "@/components/Navbar";
 import Hero from "@/components/Hero"; // adjust import as needed
 import Image from "next/image";
 import Topbar from "@/components/Topbar";
+import FeaturedProducts from "@/components/FeaturedProducts";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Topbar />
         <NavbarComponent />
         <Hero />
+        <FeaturedProducts />
       </div>
     </div>
   );
