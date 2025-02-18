@@ -1,4 +1,3 @@
-// NavbarComponent.tsx
 "use client";
 
 import {
@@ -25,34 +24,58 @@ export const AcmeLogo = () => {
 
 export default function NavbarComponent() {
   return (
-    <Navbar shouldHideOnScroll>
+    <Navbar className="bg-[#121212] text-white shadow-lg">
       <NavbarBrand>
         <AcmeLogo />
-        <p className="font-bold text-inherit">ACME</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
+          <Link className="text-gray-300 hover:text-accent transition" href="#">
+            Bags
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link aria-current="page" href="#">
-            Customers
+          <Link
+            className="text-accent border-b-2 border-accent pb-1"
+            aria-current="page"
+            href="#"
+          >
+            Accessories
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link className="text-gray-300 hover:text-accent transition" href="#">
+            Sale
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-gray-300 hover:text-accent transition" href="#">
+            Special Prices
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-gray-300 hover:text-accent transition" href="#">
+            Collections
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-gray-300 hover:text-accent transition" href="#">
+            Cromia World
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <Link className="text-gray-300 hover:text-accent transition" href="#">
+            Login
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button
+            as={Link}
+            href="#"
+            className="bg-accent text-primary px-4 py-2 rounded-md hover:bg-opacity-80 transition"
+          >
             Sign Up
           </Button>
         </NavbarItem>

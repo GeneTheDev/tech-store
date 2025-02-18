@@ -4,6 +4,7 @@
 import NavbarComponent from "@/components/Navbar";
 import Hero from "@/components/Hero"; // adjust import as needed
 import Image from "next/image";
+import Topbar from "@/components/Topbar";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       </div>
       {/* Content layer */}
       <div className="relative z-10">
+        <Topbar />
         <NavbarComponent />
         <Hero />
       </div>

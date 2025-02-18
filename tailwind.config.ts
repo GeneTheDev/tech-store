@@ -12,8 +12,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#121212", // Jet Black
+        secondary: "#1F1F1F", // Dark Gray
+        accent: "#00D4FF", // Neon Cyan
       },
     },
   },
