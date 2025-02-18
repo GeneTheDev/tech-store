@@ -24,56 +24,56 @@ export const AcmeLogo = () => {
 
 export default function NavbarComponent() {
   return (
-    <Navbar className="bg-[#121212] text-white shadow-lg">
+    <Navbar className="bg-[#121212] font-bebas text-white shadow-lg">
       <NavbarBrand>
         <AcmeLogo />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link className="text-gray-300 hover:text-accent transition" href="#">
-            Bags
+          <Link className="text-gray-300 hover:text-accent transition" href="/watches">
+            Smart Watches
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
           <Link
             className="text-accent border-b-2 border-accent pb-1"
             aria-current="page"
-            href="#"
+            href="/earbuds"
           >
+            Earbuds & Audio
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-gray-300 hover:text-accent transition" href="/sale">
+            Offers & Deals
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-gray-300 hover:text-accent transition" href="/accessories">
             Accessories
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-gray-300 hover:text-accent transition" href="#">
-            Sale
+          <Link className="text-gray-300 hover:text-accent transition" href="/new-arrivals">
+            New Arrivals
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-gray-300 hover:text-accent transition" href="#">
-            Special Prices
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-gray-300 hover:text-accent transition" href="#">
-            Collections
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-gray-300 hover:text-accent transition" href="#">
-            Cromia World
+          <Link className="text-gray-300 hover:text-accent transition" href="/reviews">
+            Reviews
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link className="text-gray-300 hover:text-accent transition" href="#">
+          <Link className="text-gray-300 hover:text-accent transition" href="/login">
             Login
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Button
             as={Link}
-            href="#"
+            href="/signup"
             className="bg-accent text-primary px-4 py-2 rounded-md hover:bg-opacity-80 transition"
           >
             Sign Up

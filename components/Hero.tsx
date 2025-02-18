@@ -1,16 +1,48 @@
-'use client'
+// Hero.tsx
+"use client";
 
-import React from 'react'
+import Image from "next/image";
+import { Button } from "@heroui/react"; // Or your preferred button library
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <div className='flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-900'>
-      <div>
-        <h1 className='text-4xl font-bold text-gray-900 dark:text-white'>Welcome to Our Website</h1>
-        <p className='mt-4 text-lg text-gray-700 dark:text-gray-300'>This is a simple hero section with a title and a description.</p>
+    <section className="relative h-screen bg-primary text-white">
+      {/* Background Image */}
+      <div className="absolute inset-0 bg-cover bg-center opacity-60">
+        <Image
+          src="/images/heroimg.jpg"
+          alt="Smartwatch"
+          layout="fill"
+          className="object-cover"
+        />
       </div>
-    </div>
-  )
-}
 
-export default Hero;
+      {/* Content Layer */}
+      <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4">
+        <h1 className="text-4xl sm:text-5xl font-bebas mb-4">
+          The Future of Timekeeping: Discover Our Smartwatches
+        </h1>
+        <p className="text-lg sm:text-xl mb-6">
+          Stay connected and stylish with our premium collection of smartwatches.
+        </p>
+
+        <div className="space-x-4">
+          <Button
+            as="a"
+            href="/shop-smartwatches"
+            className="bg-accent text-primary px-6 py-3 rounded-lg hover:bg-opacity-80 transition"
+          >
+            Shop Now
+          </Button>
+          <Button
+            as="a"
+            href="/learn-more"
+            className="border-2 border-accent text-accent px-6 py-3 rounded-lg hover:bg-accent hover:text-primary transition"
+          >
+            Learn More
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -11,6 +11,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        bebas: ["var(--font-bebas-neue)", "sans-serif"],
+      },
       colors: {
         primary: "#121212", // Jet Black
         secondary: "#1F1F1F", // Dark Gray
