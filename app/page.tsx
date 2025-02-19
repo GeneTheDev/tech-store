@@ -6,6 +6,9 @@ import Hero from "@/components/Hero"; // adjust import as needed
 import Image from "next/image";
 import Topbar from "@/components/Topbar";
 import FeaturedProducts from "@/components/FeaturedProducts";
+import { Footer } from "@/components";
+import PromoBanner from "@/components/PromoBanner";
+import FlashSale from "@/components/FlashSale";
 
 export default function Home() {
   return (
@@ -27,7 +30,10 @@ export default function Home() {
         <Topbar />
         <NavbarComponent />
         <Hero />
+        <FlashSale />
         <FeaturedProducts />
+        <PromoBanner />
+        <Footer />
       </div>
     </div>
   );
