@@ -14,6 +14,10 @@ export default {
       fontFamily: {
         bebas: ["var(--font-bebas-neue)", "sans-serif"],
       },
+      container: {
+        center: true,
+        padding: "1rem",
+      },
       fontSize: {
         '120px': '120.26px',
       },

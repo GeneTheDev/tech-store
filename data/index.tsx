@@ -14,13 +14,13 @@ export const featuredProducts = [
         {
         title: "Fitness Tracker",
         description: "Track your workouts and stay on top of your goals.",
-        imageUrl: "/images/fitness-tracker.jpg",
+        imageUrl: "/images/fitnesstracker.jpg",
         link: "/shop-fitness-tracker"
         },
         {
         title: "Smart Glasses",
         description: "Tech meets fashion with smart eyewear.",
-        imageUrl: "/images/smart-glasses.jpg",
+        imageUrl: "/images/glasses.jpg",
         link: "/shop-smart-glasses"
         }
 ];

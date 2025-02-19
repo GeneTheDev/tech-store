@@ -16,20 +16,20 @@ export default function FeaturedProducts() {
               <h4 className="font-semibold text-xl">{product.title}</h4>
               <p className="text-sm text-gray-500">{product.description}</p>
             </CardHeader>
-            <CardBody className="relative">
-              <Image
+            <CardBody className="relative flex items-center justify-center pb-20">
+            <Image
                 alt={product.title}
                 src={product.imageUrl}
                 width={270}
                 height={270}
-                className="object-cover w-full h-64 rounded-md mb-4"
-              />
-              <a
+                className="object-cover rounded-md"
+            />
+            <a
                 href={product.link}
-                className="absolute bottom-4 left-4 bg-accent text-primary px-6 py-2 rounded-lg hover:bg-opacity-80 transition"
-              >
+                className="absolute items-center bottom-5 bg-accent text-primary px-6 py-2 rounded-lg hover:bg-opacity-80 transition"
+            >
                 Shop Now
-              </a>
+            </a>
             </CardBody>
           </Card>
         ))}
