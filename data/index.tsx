@@ -24,3 +24,20 @@ export const featuredProducts = [
         link: "/shop-smart-glasses"
         }
 ];
+
+export const bestSellers = [
+    {
+      title: "Smartphone X500",
+      description: "The latest tech smartphone with powerful features.",
+      imageUrl: "/images/product-x500.jpg",
+      link: "/products/smartphone-x500",
+    },
+    {
+      title: "Laptop Pro Z",
+      description: "High-performance laptop for professionals.",
+      imageUrl: "/images/product-z-laptop.jpg",
+      link: "/products/laptop-pro-z",
+    },
+    // Add more products here
+  ];
+  

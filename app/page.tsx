@@ -9,6 +9,7 @@ import FeaturedProducts from "@/components/FeaturedProducts";
 import { Footer } from "@/components";
 import PromoBanner from "@/components/PromoBanner";
 import FlashSale from "@/components/FlashSale";
+import BestSellers from "@/components/BestSellers";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <NavbarComponent />
         <Hero />
         <FlashSale />
+        <BestSellers />
         <FeaturedProducts />
         <PromoBanner />
         <Footer />
