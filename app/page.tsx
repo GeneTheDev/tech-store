@@ -10,6 +10,7 @@ import { Footer } from "@/components";
 import PromoBanner from "@/components/PromoBanner";
 import FlashSale from "@/components/FlashSale";
 import BestSellers from "@/components/BestSellers";
+import ProductCategories from "@/components/ProductCategories";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <Hero />
         <FlashSale />
         <BestSellers />
+        <ProductCategories />
         <FeaturedProducts />
         <PromoBanner />
         <Footer />

@@ -1,38 +1,45 @@
-// /src/components/FeaturedProducts.tsx
 "use client";
 
-import { Card, CardHeader, CardBody, Image } from "@heroui/react";
-import { featuredProducts } from "@/data"; // Import the data
+import { Card, CardHeader, CardFooter, Image, Button } from "@heroui/react";
+import { featuredProducts } from "@/data";
 
 export default function FeaturedProducts() {
   return (
     <section className="py-12 px-4 bg-secondary text-white text-center">
+      {/* Section header */}
       <h2 className="text-120px sm:text-1xl font-bebas mb-8">Featured Products</h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {featuredProducts.map((product, index) => (
-          <Card key={index} className="bg-white text-primary rounded-lg shadow-lg overflow-hidden">
-            <CardHeader className="px-4 py-2">
-              <h4 className="font-semibold text-xl">{product.title}</h4>
-              <p className="text-sm text-gray-500">{product.description}</p>
-            </CardHeader>
-            <CardBody className="relative flex items-center justify-center pb-20">
-            <Image
+      
+      {/* Flex container to center the grid */}
+      <div className="flex justify-center">
+        {/* Inline grid will shrink-wrap its items */}
+        <div className="inline-grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {featuredProducts.map((product, index) => (
+            <Card key={index} isFooterBlurred className="relative w-[380px] h-[500px]">
+              <CardHeader className="absolute z-10 top-1 flex-col items-start">
+                {product.category && (
+                  <p className="text-tiny text-white/60 uppercase font-bold">
+                    {product.category}
+                  </p>
+                )}
+                <h4 className="text-white font-medium text-large">
+                  {product.title}
+                </h4>
+              </CardHeader>
+              <Image
+                removeWrapper
                 alt={product.title}
                 src={product.imageUrl}
-                width={270}
-                height={270}
-                className="object-cover rounded-md"
-            />
-            <a
-                href={product.link}
-                className="absolute items-center bottom-5 bg-accent text-primary px-6 py-2 rounded-lg hover:bg-opacity-80 transition"
-            >
-                Shop Now
-            </a>
-            </CardBody>
-          </Card>
-        ))}
+                className="z-0 w-full h-full object-cover"
+              />
+              <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t border-default-600 dark:border-default-100 flex justify-between items-center px-4 py-2">
+                <p className="text-white text-tiny">{product.description}</p>
+                <Button radius="full" size="sm" as="a" href={product.link}>
+                  Shop Now
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );
