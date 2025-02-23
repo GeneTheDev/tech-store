@@ -88,6 +88,13 @@ export const productCategories = [
     link: "/shop-smart-glasses",
   },
   
+  {
+    title: "Smart Glasses",
+    description: "Tech meets fashion with smart eyewear.",
+    imageUrl: "/images/glasses.jpg",
+    link: "/shop-smart-glasses",
+  },
+  
 ];
 
 // ✅ Example of how to ensure client-specific logic does not break hydration
