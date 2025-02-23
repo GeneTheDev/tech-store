@@ -19,13 +19,12 @@ export default function Hero() {
 
       {/* Content Layer */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4">
-        <h1 className="text-4xl sm:text-5xl font-bebas mb-4">
-          The Future of Timekeeping: Discover Our Smartwatches
-        </h1>
-        <p className="text-lg sm:text-xl mb-6">
-          Stay connected and stylish with our premium collection of smartwatches.
-        </p>
-
+      <h1 className="text-120px sm:text-120px font-bebas mb-8">
+        WINTER SALE <br /> UP TO 50% OFF
+      </h1>
+      {/* <p className="text-lg sm:text-xl mb-6">
+        Limited-time deals on our premium smartwatches. Shop now!
+      </p> */}
         <div className="space-x-4">
           <Button
             as="a"

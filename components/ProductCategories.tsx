@@ -11,7 +11,7 @@ const ProductCategories = () => {
       <div className="flex justify-center">
         <div className="max-w-[1200px] w-full px-6">
     <div className="px-6">
-            <h2 className="text-5xl font-bebas mb-10" suppressHydrationWarning>
+            <h2 className="text-120px sm:text-120px font-bebas mb-8" suppressHydrationWarning>
               Shop by Category
             </h2>
 

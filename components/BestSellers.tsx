@@ -7,7 +7,7 @@ const BestSellers = () => {
   return (
     <section className="py-12 px-4 bg-secondary text-white text-center">
       {/* Section Header */}
-      <h2 className="text-120px sm:text-120px font-bebas mb-8">🔥 Best-Sellers</h2>
+      <h2 className="text-120px sm:text-120px font-bebas mb-8"> Best Sellers</h2>
       
       {/* Centered Grid */}
       <div className="flex justify-center">
