@@ -7,7 +7,9 @@ import {
   NavbarItem,
   Link,
   Button,
+  Badge,
 } from "@heroui/react";
+import { ShoppingCart } from "lucide-react";
 
 export const AcmeLogo = () => {
   return (
@@ -65,21 +67,23 @@ export default function NavbarComponent() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link className="text-gray-300 hover:text-accent transition" href="/login">
-            Login
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button
-            as={Link}
-            href="/signup"
-            className="bg-accent text-primary px-4 py-2 rounded-md hover:bg-opacity-80 transition"
-          >
-            Sign Up
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
+  <NavbarItem>
+    <Button
+      as={Link}
+      href="/cart"
+      className="relative bg-transparent p-2 rounded-md hover:bg-opacity-80 transition"
+    >
+      <ShoppingCart className="text-gray-300 hover:text-accent w-6 h-6" />
+      {/* Badge for cart count, adjust dynamically */}
+      <Badge
+        color="danger"
+        className="absolute -top-1 -right-1 text-xs px-2 py-1"
+      >
+        3 {/* Replace with dynamic cart count */}
+      </Badge>
+    </Button>
+  </NavbarItem>
+</NavbarContent>
     </Navbar>
   );
 }
