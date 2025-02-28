@@ -11,9 +11,12 @@ const ProductCategories = () => {
       <div className="flex justify-center">
         <div className="max-w-[1200px] w-full px-6">
     <div className="px-6">
-            <h2 className="text-120px sm:text-120px font-bebas mb-8" suppressHydrationWarning>
+            <h2 className="text-120px sm:text-120px font-bebas mb-2" suppressHydrationWarning>
               Shop by Category
             </h2>
+            <p className="text-lg sm:text-xl text-white mb-8">
+              Browse through our curated collections of the latest and greatest products. Find the perfect items that match your style.
+            </p>
 
             {categories.length > 0 && (
               <div className="max-w-[1200px] gap-4 grid grid-cols-12">
