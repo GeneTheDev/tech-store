@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const FlashSale = () => {
   const [timeLeft, setTimeLeft] = useState<number>(3600); // Initial countdown set to 1 hour (3600 seconds)
@@ -29,22 +29,24 @@ const FlashSale = () => {
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
     const secs = seconds % 60;
-    return `${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+    return `${hours < 10 ? "0" : ""}${hours}:${minutes < 10 ? "0" : ""}${minutes}:${secs < 10 ? "0" : ""}${secs}`;
   };
 
   return (
     <section className="bg-primary text-white py-16">
       <div className="container mx-auto px-6 text-center">
         {/* Flash Sale Title with Bebas Font */}
-        <h2 className="text-3xl sm:text-4xl font-bebas mb-4">⚡ Flash Sale - Limited Time Offer!</h2>
-        
+        <h2 className="text-[48.104px] leading-[51.54px] font-bebas mb-4">
+          ⚡ Flash Sale - Limited Time Offer!
+        </h2>
+
         {/* Sale Timer with Bebas Font */}
-        <div className="text-xl sm:text-2xl font-bebas font-bold mb-6">
+        <div className="text-[48.104px] leading-[51.54px] font-bebas font-bold mb-6">
           <span>Hurry! Only </span>
           <span className="text-accent">{formatTime(timeLeft)}</span>
           <span> left to grab amazing discounts!</span>
         </div>
-        
+
         {/* Call to Action Button */}
         {isSaleActive ? (
           <a
