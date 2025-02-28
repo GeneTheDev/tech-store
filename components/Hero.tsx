@@ -5,16 +5,20 @@ import { Button } from "@heroui/react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-primary text-white flex items-center justify-center text-center px-4">
-      {/* Background Image */}
-      <Image
-        src="/images/heroimg.jpg"
-        alt="Smartwatch"
-        width={1920}
-        height={1080}
-        className="absolute inset-0 w-full h-full object-cover"
-        priority
-      />
+    <section className="relative h-[92vh] bg-primary text-white flex items-center justify-center text-center px-6">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/heroimg.jpg"
+          alt="Smartwatch"
+          width={1920}
+          height={1080}
+          className="w-full h-full object-cover"
+          priority
+        />
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent"></div>
+      </div>
 
       {/* Content */}
       <div className="relative z-10">
@@ -25,14 +29,14 @@ export default function Hero() {
           <Button
             as="a"
             href="/shop-smartwatches"
-            className="bg-accent text-primary px-6 py-3 rounded-lg hover:bg-opacity-80 transition"
+            className="bg-accent text-white px-6 py-3 rounded-lg hover:bg-opacity-80 transition"
           >
             Shop Now
           </Button>
           <Button
             as="a"
             href="/learn-more"
-            className="bg-transparent border-2 border-accent text-accent px-6 py-3 rounded-lg hover:bg-accent hover:text-primary transition"
+            className="bg-transparent border-2 border-accent text-white px-6 py-3 rounded-lg hover:bg-accent hover:text-white transition"
           >
             Learn More
           </Button>
